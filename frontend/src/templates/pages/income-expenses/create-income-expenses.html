@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание дохода/расхода</title>
+</head>
+<body>
+<div class="wrapper h-100">
+    <section class="dash d-flex flex-row h-100">
+
+
+        <section class="dashboard">
+            <div class="d-flex flex-column flex-shrink-0 bg-white h-100"
+                 style="width: 218px; border: 1px solid #D9D9D9; ">
+
+                <div class="d-flex align-items-center mb-md-0 me-md-auto text-white mx-auto"
+                     style="padding: 40px 0 20px 0; "><a
+                        href="/" class=" text-decoration-none">
+                    <img class="img-mb" src="../../../images/logo.png" alt="logo">
+                </a>
+                </div>
+
+                <hr class="m-0" style="color:var(--bs-primary-text-emphasis);">
+
+
+                <ul class="nav nav-pills flex-column mb-auto mx-auto" style="padding-top: 60px; ">
+
+                    <li class="nav-item nav-style">
+                        <a href="#" class="nav-link " aria-current="page">
+                            <i class="fa-regular fa-house"></i>
+                            Главная
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-style">
+                        <a href="#" class="nav-link ">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            Доходы & Расходы
+                        </a>
+                    </li>
+
+
+                    <li class=" nav-item nav-style d-flex justify-content-between  ">
+                        <a href="#" class="nav-link d-inline-flex align-items-center collapsed "
+                           data-bs-toggle="collapse" data-bs-target="#category-collapse" aria-expanded="false">
+                            Категории
+                            <i class="fa-solid fa-chevron-right " style="margin-left: 65px"></i>
+                        </a>
+                    </li>
+
+                    <div class="collapse " id="category-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                            <li class="nav-item nav-style">
+                                <a href="#" class="nav-link ">
+                                    Доходы
+                                </a>
+                            </li>
+                            <li class="nav-item nav-style">
+                                <a href="#" class="nav-link ">
+                                    Расходы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <div class="cen">
+
+                    <div class="d-flex mx-auto dashboard-balance">
+                        <div class="nav-style" style="margin-right: 10px; color: #052C65"> Баланс:</div>
+                        <p style="color: #0D6EFD">500 $</p>
+                    </div>
+
+                    <hr class="m-0" style="color:#D9D9D9;">
+
+
+                    <div class="dropup-center dropup d-flex align-items-center mx-auto user-toggle">
+
+                        <div class="btn dropdown-toggle user-toggle-arrow d-flex align-items-center" type="button"
+                             data-bs-toggle="dropdown"
+                             aria-expanded="false" style="font-size: 14px">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle me-3"
+                                 style="width: 36px; height: 36px; background-color: #D9D9D9; ">
+                                <i class="fa-regular fa-user"
+                                   style="color: #6C757D"></i>
+                            </div>
+                            Roman Chernov
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="main d-flex flex-column w-100 create-income-expenses">
+            <div class="container-fluid min-vh-100 w-100" style="padding: 100px 94px 133px 60px;">
+
+                <h1 class="create-income-expenses-title m-0" style="padding-bottom: 40px ">
+                    Создание дохода/расхода</h1>
+
+                <div class="create-income-expenses-blocks">
+
+                    <div>
+                        <div class="d-flex flex-column create-income-expenses-blocks-inputs" style="gap: 10px">
+                            <div class="">
+                                <input type="text" class="form-control" id="" placeholder="Тип..." value=""
+                                       required="">
+                            </div>
+                            <div class="">
+                                <input type="text" class="form-control" id="" placeholder="Категория..." value=""
+                                       required="">
+                            </div>
+                            <div class="">
+                                <input type="text" class="form-control" id="" placeholder="Сумма в $..." value=""
+                                       required="">
+                            </div>
+                            <div class="">
+                                <input type="text" class="form-control" id="" placeholder="Дата..." value=""
+                                       required="">
+                            </div>
+                            <div class="">
+                                <input type="text" class="form-control" id="" placeholder="Комментарий..." value=""
+                                       required="" style="margin-bottom: 20px">
+                            </div>
+                        </div>
+
+                        <div class="create-income-expenses-blocks-buttons d-flex" style="gap: 11px">
+                            <button role="button" class="border-0 lh-1 btn btn-success fw-medium "
+                                    style=" width: 88px;">
+                                Создать
+                            </button>
+
+                            <button role="button" class="border-0 lh-1 btn btn-danger fw-medium "
+                                    style="width: 83px; ">
+                                Отмена
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+</div>
+
+</body>
+</html>

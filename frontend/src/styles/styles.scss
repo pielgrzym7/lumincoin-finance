@@ -1,0 +1,312 @@
+:root {
+  --bs-primary-text-emphasis: #052c65;
+  --bs-black: #000;
+  --bs-secondary: #6c757d;
+  --bs-primary: #0d6efd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-title, .income-title, .create-income-title, .edit-income-title, .expenses-title, .create-expenses-title,
+.edit-expenses-title, .income-expenses-title, .create-income-expenses-title, .edit-income-expenses {
+  font-weight: 500 !important;
+  color: #052C65;
+  font-size: 40px;
+
+}
+
+.login {
+  .login-title {
+    color: var(--bs-primary-text-emphasis);
+  }
+
+  .invalid-feedback {
+    display: flex;
+  }
+
+  .img-mb {
+    margin-bottom: 60px;
+  }
+
+  .form-style {
+    width: 397px;
+    min-width: 397px;
+  }
+
+  .input-style {
+    margin-bottom: 10px;
+  }
+
+  span i {
+    color: #6C757D;
+  }
+}
+
+
+.sign-up {
+  .sign-up-title {
+    color: var(--bs-primary-text-emphasis);
+  }
+
+  .invalid-feedback {
+    display: flex;
+  }
+
+  .img-mb {
+    margin-bottom: 60px;
+  }
+
+  .form-style {
+    width: 397px;
+    min-width: 397px;
+  }
+
+  .input-style {
+    margin-bottom: 10px;
+  }
+
+  .input-style-mb {
+    margin-bottom: 20px;
+  }
+
+  span i {
+    color: #6C757D;
+  }
+}
+
+.dashboard {
+  .nav-style .nav-link, #category-collapse .btn-toggle-nav .nav-link, #category-collapse .btn-toggle-nav .nav-link a.link-body-emphasis {
+    color: var(--bs-primary-text-emphasis) !important;
+    padding: 12px 16px;
+    font-size: 14px;
+    height: 40px;
+    min-width: 178px;
+    width: 178px;
+    line-height: 1;
+    white-space: nowrap;
+    transition: background-color .15s, color .15s;
+  }
+
+  .nav .nav-item.nav-style {
+    height: 40px !important;
+    min-width: 178px !important;
+    width: 178px !important;
+  }
+
+
+  .nav-style .nav-link i {
+    color: inherit;
+    margin-right: 10px;
+  }
+
+  .nav-style .nav-link.active:not(#category-collapse) {
+    color: #fff !important;
+    background-color: var(--bs-primary);
+  }
+
+  .active-dash, #category-collapse .btn-toggle-nav .nav-link.active {
+    color: #fff !important;
+    border: 1px solid var(--bs-primary) !important;
+    background-color: var(--bs-primary);
+  }
+
+
+  .nav-style .nav-link:hover:not(.active) {
+    color: #1273ff;
+    background-color: #e7f1ff;
+  }
+
+  .sub-link {
+    font-size: 14px;
+    color: #052C65;
+    padding: 12px 16px;
+  }
+
+  .user-toggle {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    min-width: 178px;
+    width: 178px;
+  }
+
+  .btn.dropdown-toggle.user-toggle-arrow::after {
+    content: none !important;
+  }
+
+  .dashboard-balance {
+    font-size: 14px;
+    margin-bottom: 20px;
+    min-width: 178px;
+    width: 178px;
+    padding: 12px 16px;
+    font-weight: 500;
+  }
+
+  .chart-pie h2 {
+    font-weight: 500;
+    color: #290661;
+    margin-bottom: 20px;
+  }
+
+
+  .chart-container {
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .chart-container canvas#chart-income, .chart-container canvas#chart-expenses {
+    width: 460px !important;
+    height: 460px !important;
+  }
+
+
+}
+
+.income {
+
+  .income-block {
+    padding: 20px;
+    width: 351px;
+    height: 120px;
+    border: 1px solid #CED4DA;
+    border-radius: 12px
+
+  }
+
+  .income-block-title {
+    font-size: 28px;
+    color: #290661;
+    margin-bottom: 10px
+  }
+
+  .income-block-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.create-income {
+  .create-income-block-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .income-blocks input::placeholder {
+    font-size: 15px !important;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--bs-secondary);
+  }
+}
+
+.edit-income {
+  .edit-income-block-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.expenses {
+  .expenses-block {
+    padding: 20px;
+    width: 351px;
+    height: 120px;
+    border: 1px solid #CED4DA;
+    border-radius: 12px
+  }
+
+  .expenses-block-title {
+    font-size: 28px;
+    color: #290661;
+    margin-bottom: 10px;
+  }
+
+  .expenses-block-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+
+  }
+}
+
+.create-expenses {
+  .create-expenses-block-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.edit-expenses {
+  .edit-expenses-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.income-expenses {
+  .income-expenses-block-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .income-expenses-tabs li button {
+    height: 37px;
+    width: 100px;
+    border-radius: 4px;
+  }
+}
+
+.create-income-expenses {
+  .create-income-expenses-blocks-inputs input {
+    width: 397px;
+    height: 38px;
+    padding: 7px 16px;
+  }
+
+  .create-income-expenses-blocks-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.edit-income-expenses {
+  .edit-income-expenses-blocks-inputs input {
+    width: 397px;
+    height: 38px;
+    padding: 7px 16px;
+  }
+
+  .edit-income-expenses-blocks-buttons button {
+    padding: 12px 16px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+

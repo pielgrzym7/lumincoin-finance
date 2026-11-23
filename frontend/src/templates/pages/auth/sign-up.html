@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumincoin Webpack / sign-up</title>
+</head>
+<body>
+
+
+<section class="sign-up d-flex vh-100">
+    <div class="container-fluid d-flex align-content-center justify-content-center py-4 m-auto  ">
+        <form class="text-center form-style ">
+            <img class="img-mb" src="../../../images/logo.png" alt="logo">
+            <h1 class=" sign-up-title h3 mb-4 fw-medium fs-1">Создайте аккаунт</h1>
+
+            <div class="col-12 input-style ">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+
+                    <input type="text" class="form-control" id="name" placeholder="Имя" required="">
+                    <div class="invalid-feedback error" id="name-error">
+                        Введите корректное имя!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 input-style ">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+
+                    <input type="text" class="form-control" id="last-name" placeholder="Фамилия" required="">
+                    <div class="invalid-feedback error" id="last-name-error">
+                        Введите корректную фамилию!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 input-style ">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-regular fa-envelope-open"></i></span>
+
+                    <input type="text" class="form-control" id="email" placeholder="Электронная почта" required="">
+                    <div class="invalid-feedback error" id="email-error">
+                        Введите корректную электронную почту!
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 input-style ">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+
+                    <input type="password" class="form-control" id="password" placeholder="Пароль" required="">
+                    <div class="invalid-feedback error" id="password-error">
+                        Введите корректный пароль!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 input-style input-style-mb ">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+
+                    <input type="password" class="form-control " id="repeat-password"
+                           placeholder=" Подтверждение пароля" required="">
+                    <div class="invalid-feedback error" id="repeat-password-error">
+                        Пароль должен совпадать!
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary form-style py-2 input-style fw-medium" type="button">Войти</button>
+
+            <p class=" text-body-secondary text-start " id="sign-up-link"> Уже есть аккаунт? <a href="">Войдите в
+                систему</a></p>
+        </form>
+
+
+    </div>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dash</title>
+</head>
+<body>
+
+<div class="wrapper h-100">
+    <section class="dash d-flex flex-row h-100">
+
+
+        <section class="dashboard">
+            <div class="d-flex flex-column flex-shrink-0 bg-white h-100"
+                 style="width: 218px; border: 1px solid #D9D9D9; ">
+
+                <div class="d-flex align-items-center mb-md-0 me-md-auto text-white mx-auto"
+                     style="padding: 40px 0 20px 0; "><a
+                        href="/" class=" text-decoration-none">
+                    <img class="img-mb" src="../../../images/logo.png" alt="logo">
+                </a>
+                </div>
+
+                <hr class="m-0" style="color:var(--bs-primary-text-emphasis);">
+
+
+                <ul class="nav nav-pills flex-column mb-auto mx-auto" style="padding-top: 60px; ">
+
+                    <li class="nav-item nav-style">
+                        <a href="#" class="nav-link " aria-current="page">
+                            <i class="fa-regular fa-house"></i>
+                            Главная
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-style">
+                        <a href="#" class="nav-link ">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            Доходы & Расходы
+                        </a>
+                    </li>
+
+
+                    <li class=" nav-item nav-style d-flex justify-content-between  ">
+                        <a href="#" class="nav-link d-inline-flex align-items-center collapsed "
+                           data-bs-toggle="collapse" data-bs-target="#category-collapse" aria-expanded="false">
+                            Категории
+                            <i class="fa-solid fa-chevron-right " style="margin-left: 65px"></i>
+                        </a>
+                    </li>
+
+                    <div class="collapse " id="category-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                            <li class="nav-item nav-style">
+                                <a href="#" class="nav-link ">
+                                    Доходы
+                                </a>
+                            </li>
+                            <li class="nav-item nav-style">
+                                <a href="#" class="nav-link ">
+                                    Расходы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <div class="cen">
+
+                    <div class="d-flex mx-auto dashboard-balance ">
+                        <div class="nav-style" style="margin-right: 10px; color: #052C65"> Баланс:</div>
+                        <p style="color: #0D6EFD">500 $</p>
+                    </div>
+
+                    <hr class="m-0" style="color:#D9D9D9;">
+
+
+                    <div class="dropup-center dropup d-flex align-items-center mx-auto user-toggle">
+
+                        <div class="btn dropdown-toggle user-toggle-arrow d-flex align-items-center" type="button"
+                             data-bs-toggle="dropdown"
+                             aria-expanded="false" style="font-size: 14px">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle me-3"
+                                 style="width: 36px; height: 36px; background-color: #D9D9D9; ">
+                                <i class="fa-regular fa-user"
+                                   style="color: #6C757D"></i>
+                            </div>
+                            Roman Chernov
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="main d-flex flex-column">
+            <div class="container-fluid min-vh-100" style="padding: 100px 94px 133px 60px;">
+
+                <h1 class="dashboard-title m-0 " style="padding-bottom: 60px">
+                    Главная</h1>
+
+                <div class="dashboard-tabs" style="margin-bottom: 140px;font-weight: 500; ">
+                    <ul class="nav nav-tabs border-0" id="dashboard-tabs" role="tablist" style="gap: 20px">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active lh-1 border-0" id="today-tab" data-bs-toggle="tab"
+                                    data-bs-target="#today"
+                                    type="button" role="tab" aria-controls="today" aria-selected="true"
+                                    style="height: 37px; width: 100px; border-radius: 4px;background-color:  #6c757d; color: #ffffff">
+                                Сегодня
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#week"
+                                    type="button" role="tab" aria-controls="week" aria-selected="true"
+                                    style="height: 37px; width: 100px; border-radius: 4px; border: 1px solid #6c757d; color: #6c757d">
+                                Неделя
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#month"
+                                    type="button" role="tab" aria-controls="month" aria-selected="true"
+                                    style="height: 37px; width: 100px; border-radius: 4px; border: 1px solid #6c757d; color: #6c757d">
+                                Месяц
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#year"
+                                    type="button" role="tab" aria-controls="year" aria-selected="true"
+                                    style="height: 37px; width: 100px; border-radius: 4px; border: 1px solid #6c757d; color: #6c757d">
+                                Год
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#all"
+                                    type="button" role="tab" aria-controls="all" aria-selected="true"
+                                    style="height: 37px; width: 100px; border-radius: 4px; border: 1px solid #6c757d; color: #6c757d">
+                                Все
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#interval"
+                                    type="button" role="tab" aria-controls="interval" aria-selected="true"
+                                    style="height: 37px; width: 100px; border-radius: 4px; border: 1px solid #6c757d; color: #6c757d">
+                                Интервал
+                            </button>
+                        </li>
+                        <div class="align-self-center"> с</div>
+                        <a class="align-self-center text-decoration-none text-secondary"
+                           style=" border-bottom: 1px solid #6c757d;">Дата</a>
+                        <div class="align-self-center">по</div>
+                        <a class="align-self-center text-decoration-none text-secondary"
+                           style=" border-bottom: 1px solid #6c757d;">Дата</a>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="today" role="tabpanel" aria-labelledby="today-tab">сегодня
+                        </div>
+                        <div class="tab-pane" id="week" role="tabpanel" aria-labelledby="week-tab">неделя</div>
+                        <div class="tab-pane" id="month" role="tabpanel" aria-labelledby="month-tab">месяц</div>
+                        <div class="tab-pane" id="year" role="tabpanel" aria-labelledby="year-tab">год</div>
+                        <div class="tab-pane" id="all" role="tabpanel" aria-labelledby="all-tab">все</div>
+                        <div class="tab-pane" id="interval" role="tabpanel" aria-labelledby="interval-tab">интервал
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-pie">
+                    <div class="d-flex flex-row" style="gap: 84px">
+
+                        <div class="chart-container d-flex flex-column align-items-center">
+                            <h2 class="fs-3">Доходы</h2>
+                            <canvas id="chart-income" style="width: 460px; height: 460px; "></canvas>
+                        </div>
+
+                        <div class="chart-line position-relative"
+                             style="height: 450px; width: 1px; background-color: #D9D9D9; top: 65px;"></div>
+
+                        <div class="chart-container d-flex flex-column align-items-center">
+                            <h2 class="fs-3" >Расходы</h2>
+                            <canvas id="chart-expenses" style="width: 460px; height: 460px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="links d-flex flex-row gap-5 flex-wrap mb-5">
+
+                <a href="/">1. Dash</a>
+                <a href="/login">2. login</a>
+                <a href="/sign-up">3. sign-up</a>
+                <a href="/404">4. 404</a>
+                <a href="/income">5. income</a>
+                <a href="/create-income">6. create-income</a>
+                <a href="/edit-income">7. edit-income</a>
+                <a href="/expenses">8. expenses</a>
+                <a href="/create-expenses">9. create-expenses</a>
+                <a href="/edit-expenses">10. edit-expenses</a>
+                <a href="/income-expenses">11. income-expenses</a>
+                <a href="/create-income-expenses">12. create-income-expenses</a>
+                <a href="/edit-income-expenses">13. edit-income-expenses</a>
+            </div>
+        </section>
+
+    </section>
+</div>
+
+
+</body>
+</html>
+
+

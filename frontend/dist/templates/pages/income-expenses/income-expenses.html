@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>income-expenses</title>
+</head>
+<body>
+<div class="wrapper h-100">
+    <section class="dash d-flex flex-row h-100">
+
+
+        <section class="dashboard">
+            <div class="d-flex flex-column flex-shrink-0 bg-white h-100"
+                 style="width: 218px; border: 1px solid #D9D9D9; ">
+
+                <div class="d-flex align-items-center mb-md-0 me-md-auto text-white mx-auto"
+                     style="padding: 40px 0 20px 0; "><a
+                        href="/" class=" text-decoration-none">
+                    <img class="img-mb" src="../../../images/logo.png" alt="logo">
+                </a>
+                </div>
+
+                <hr class="m-0" style="color:var(--bs-primary-text-emphasis);">
+
+
+                <ul class="nav nav-pills flex-column mb-auto mx-auto" style="padding-top: 60px; ">
+
+                    <li class="nav-item nav-style">
+                        <a href="#" class="nav-link " aria-current="page">
+                            <i class="fa-regular fa-house"></i>
+                            Главная
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-style">
+                        <a href="#" class="nav-link ">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            Доходы & Расходы
+                        </a>
+                    </li>
+
+
+                    <li class=" nav-item nav-style d-flex justify-content-between  ">
+                        <a href="#" class="nav-link d-inline-flex align-items-center collapsed "
+                           data-bs-toggle="collapse" data-bs-target="#category-collapse" aria-expanded="false">
+                            Категории
+                            <i class="fa-solid fa-chevron-right " style="margin-left: 65px"></i>
+                        </a>
+                    </li>
+
+                    <div class="collapse " id="category-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                            <li class="nav-item nav-style">
+                                <a href="#" class="nav-link ">
+                                    Доходы
+                                </a>
+                            </li>
+                            <li class="nav-item nav-style">
+                                <a href="#" class="nav-link ">
+                                    Расходы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <div class="cen">
+
+                    <div class="d-flex mx-auto dashboard-balance">
+                        <div class="nav-style" style="margin-right: 10px; color: #052C65"> Баланс:</div>
+                        <p style="color: #0D6EFD">500 $</p>
+                    </div>
+
+                    <hr class="m-0" style="color:#D9D9D9;">
+
+
+                    <div class="dropup-center dropup d-flex align-items-center mx-auto user-toggle">
+
+                        <div class="btn dropdown-toggle user-toggle-arrow d-flex align-items-center" type="button"
+                             data-bs-toggle="dropdown"
+                             aria-expanded="false" style="font-size: 14px">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle me-3"
+                                 style="width: 36px; height: 36px; background-color: #D9D9D9; ">
+                                <i class="fa-regular fa-user"
+                                   style="color: #6C757D"></i>
+                            </div>
+                            Roman Chernov
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="main d-flex flex-column w-100 income-expenses">
+            <div class="container-fluid min-vh-100 w-100" style="padding: 100px 94px 133px 60px;">
+
+                <h1 class="income-expenses-title m-0" style="padding-bottom: 40px ">
+                    Доходы и расходы</h1>
+
+                <div class="income-expenses-block-buttons d-flex" style="gap: 10px; margin-bottom: 40px">
+                    <button role="button" class="border-0 lh-1 btn btn-success fw-medium "
+                            style=" width: 130px; ">
+                        Создать доход
+                    </button>
+
+                    <button role="button" class="border-0 lh-1 btn btn-danger fw-medium "
+                            style=" width: 137px;">
+                        Создать расход
+                    </button>
+                </div>
+
+                <div class="dashboard-tabs income-expenses-tabs fw-medium" style="margin-bottom: 40px">
+                    <ul class="nav nav-tabs border-0 fw-medium" id="dashboard-tabs" role="tablist" style="gap: 20px">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active lh-1 border-0" id="today-tab" data-bs-toggle="tab"
+                                    data-bs-target="#today"
+                                    type="button" role="tab" aria-controls="today" aria-selected="true"
+                                    style="background-color:  #6c757d; color: #ffffff">
+                                Сегодня
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#week"
+                                    type="button" role="tab" aria-controls="week" aria-selected="true"
+                                    style="border-radius: 4px; border: 1px solid #6c757d; color: #6c757d">
+                                Неделя
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#month"
+                                    type="button" role="tab" aria-controls="month" aria-selected="true"
+                                    style=" border: 1px solid #6c757d; color: #6c757d">
+                                Месяц
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#year"
+                                    type="button" role="tab" aria-controls="year" aria-selected="true"
+                                    style="border: 1px solid #6c757d; color: #6c757d">
+                                Год
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#all"
+                                    type="button" role="tab" aria-controls="all" aria-selected="true"
+                                    style="border: 1px solid #6c757d; color: #6c757d">
+                                Все
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  lh-1" id="" data-bs-toggle="tab" data-bs-target="#interval"
+                                    type="button" role="tab" aria-controls="interval" aria-selected="true"
+                                    style=" border: 1px solid #6c757d; color: #6c757d">
+                                Интервал
+                            </button>
+                        </li>
+                        <div class="align-self-center"> с</div>
+                        <a class="align-self-center text-decoration-none text-secondary"
+                           style=" border-bottom: 1px solid #6c757d;">Дата</a>
+                        <div class="align-self-center">по</div>
+                        <a class="align-self-center text-decoration-none text-secondary"
+                           style=" border-bottom: 1px solid #6c757d;">Дата</a>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="today" role="tabpanel" aria-labelledby="today-tab">сегодня
+                        </div>
+                        <div class="tab-pane" id="week" role="tabpanel" aria-labelledby="week-tab">неделя</div>
+                        <div class="tab-pane" id="month" role="tabpanel" aria-labelledby="month-tab">месяц</div>
+                        <div class="tab-pane" id="year" role="tabpanel" aria-labelledby="year-tab">год</div>
+                        <div class="tab-pane" id="all" role="tabpanel" aria-labelledby="all-tab">все</div>
+                        <div class="tab-pane" id="interval" role="tabpanel" aria-labelledby="interval-tab">интервал
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">№ операции</th>
+                        <th scope="col">Тип</th>
+                        <th scope="col">Категория</th>
+                        <th scope="col">Сумма</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Комментарий</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td style="color: #198754">доход</td>
+                        <td>зарплата</td>
+                        <td>500$</td>
+                        <td>11.09.2022</td>
+                        <td></td>
+                        <td>
+                            <div class="d-flex" style="gap: 11px"><i class="fa-solid fa-trash"></i><i
+                                    class="fa-solid fa-edit"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td style="color: #DC3545">расход</td>
+                        <td>жильё</td>
+                        <td>2 500$</td>
+                        <td>12.09.2022</td>
+                        <td></td>
+                        <td>
+                            <div class="d-flex" style="gap: 11px"><i class="fa-solid fa-trash"></i><i
+                                    class="fa-solid fa-edit"></i></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        style="margin-top: 80px;">
+                    Попап для иконки удалить
+                </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog">
+                        <div class="modal-content"
+                             style="width: 530px; height: 161px; background: #FFFFFF; border: 1px solid #CED4DA; border-radius: 12px; padding: 40px">
+                            <div class="modal-body p-0 fw-medium"
+                                 style=" font-size: 20px; line-height: 23px; text-align: center; color: #290661; margin-bottom: 20px ">
+                                Вы действительно хотите удалить операцию?
+                            </div>
+                            <div class="modal-footer border-0 p-0 m-auto d-flex" style="gap: 12px">
+                                <button type="button" class="btn btn-success m-0 lh-1 text-white"
+                                        data-bs-dismiss="modal"
+                                        style=" padding: 12px 16px; width: 111px; height: 38px;  border-radius: 5px; font-size: 14px">
+                                    Да, удалить
+                                </button>
+                                <button type="button" class="btn btn-danger m-0 lh-1 text-white "
+                                        data-bs-dismiss="modal"
+                                        style=" padding: 12px 16px; width: 107px; height: 38px; border-radius: 5px; font-size: 14px">
+                                    Не удалять
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+</div>
+</div>
+
+</body>
+</html>
